@@ -1,0 +1,85 @@
+\chapter{TÍTULO DO CAPÍTULO...}{}
+\label{cap:03}
+
+\lipsum
+
+\definecolor{verde}{RGB}{25, 90, 25}
+\lstset{
+	language=c,
+	extendedchars=true, % permite acentos
+	basicstyle=\ttfamily\scriptsize, 
+	keywordstyle=\color{blue}, 
+	stringstyle=\color{purple}, 
+	commentstyle=\color{verde}, 
+	extendedchars=true, 
+	showspaces=false, 
+	showstringspaces=false, 
+	numbers=left,
+	numberstyle=\ttfamily\tiny,
+	breaklines=true, 
+	backgroundcolor=\color{white},
+	breakautoindent=true, 
+	captionpos=t, %top caption
+	xleftmargin=10.5mm,
+	tabsize=3,
+	framexleftmargin=9.5mm,
+	framexrightmargin=-1.0mm, 
+	frame=shadowbox, % 〈none|leftline|topline|bottomline|lines|single|shadowbox〉
+	rulesepcolor=\color{gray},
+	numberbychapter=false,
+	backgroundcolor=\color{white},
+	firstnumber=86,
+	%frameround=tttt
+}
+\subsection{Ambiente}
+
+O ambiente \textbf{lstlisting} pode ser utilizado para inserção de trecho de códigos de programas importantes para a compreensão do seu trabalho. Ele foi configurado da classe \corujatex para ser designado como \textbf{Programa}. Um exemplo pode observado no \autoref{prog:01}. Analise também no código \LaTeX o comando 
+
+\begin{lstlisting}[caption= Código teste em Linguagem C, label=prog:01] 
+void main() 
+{
+	char slot;
+	//configuracoes basicas - sem acentos
+	CMCON=0x07;
+	ADCON1=0x0F;
+	INTCON.GIE=0;
+	TRISB.F0=0;
+	PORTB.F0=0;
+	InicializaMatriz();
+	InicializaTeclado();
+	InicializaDisplay();
+	while(1)
+	{
+		PORTB.F0=1;
+		Delay_ms(250);
+		PORTB.F0=0;
+		Delay_ms(250);
+	}
+}	
+\end{lstlisting}
+
+\section{Seção do capítulo}
+\lipsum %% gera texto apenas para teste
+
+\begin{lstlisting}[caption= Código teste do MikroC for PIC] 
+	void main() 
+	{
+		char slot;
+		//configuracoes basicas - sem acentos
+		CMCON=0x07;
+		ADCON1=0x0F;
+		INTCON.GIE=0;
+		TRISB.F0=0;
+		PORTB.F0=0;
+		InicializaMatriz();
+		InicializaTeclado();
+		InicializaDisplay();
+		while(1)
+		{
+			PORTB.F0=1;
+			Delay_ms(250);
+			PORTB.F0=0;
+			Delay_ms(250);
+		}
+	}	
+\end{lstlisting}
