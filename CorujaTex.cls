@@ -281,7 +281,7 @@
 	\includegraphics[width=1.2cm]{./__suporte/logo_marca}\\
 	Este volume foi tipografado em \LaTeX\ na classe \textsf{Coruja\TeX} como uma demanda do Colegiado do curso de Engenharia Elétrica da \acf*{UFOB}\\
 	\urlstyle{sf}%
-	(\url{https://github.com/CCEE_UFOB/CorujaTeX}).
+	(\url{https://github.com/ademariocarvalho/CCEE_UFOB_CorujaTEX}).
 	%Para detalhes sobre este documento, clique \Acrobatmenu{GeneralInfo}{aqui}.
 }
 
